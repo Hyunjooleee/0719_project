@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- header -->
+        <div class="row justify-content-center">
+                <h2 class="display-2"><a class="text-dark" href="../inchic/index.html">INCHIC</a></h2>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-dark bg-dark justify-content-between ">
+
+            <div>
+                <ul class="navbar-nav">
+                    <div class="row mx-1">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Notice</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Introduction</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Business</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="navbar-nav">
+                    <div class="row mx-1">
+                        <li class="nav-item mx-2">
+                            <!-- Sign Up 모달 -->
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signUp">Sign-up</a>
+
+                            <div class="modal fade" id="signUp">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+
+                                        <!-- 왼쪽오른쪽으로 나눠서 왼족엔 사진, 오른쪽엔 사인업 -->
+
+                                        <div class="row">
+                                            <div class="col col-sm-4">
+                                                <img src="../public/images/inchic/7.png" width="100%" height="100%">
+
+                                            </div>
+                                            <div class="col col-sm-8">
+                                                <div class="modal-header">
+
+                                                    <h4 class="modal-title">Sign Up</h4>
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>By having a INCHIC account, you can join, vote, and comment on
+                                                        all your favorite INCHIC content.</p>
+
+                                                    <form action="/inchic" method="GET">
+                                                        <input type="text" name="email" placeholder="E-mail"
+                                                            class="m-1">
+                                                        <input type="text" name="userName"
+                                                            placeholder="Choose a User Name" class="m-1">
+                                                        <input type="text" name="passWord" placeholder="Password"
+                                                            class="m-1">
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-outline-dark">Sign-Up</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!-- Log In 모달 -->
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#logIn">Log-In</a>
+
+                            <div class="modal fade" id="logIn">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+
+                                        <!-- 왼쪽오른쪽으로 나눠서 왼족엔 사진, 오른쪽엔 사인업 -->
+
+                                        <div class="row">
+                                            <div class="col col-sm-4">
+                                                <img src="../public/images/inchic/7.png" width="100%" height="100%">
+
+                                            </div>
+                                            <div class="col col-sm-8">
+                                                <div class="modal-header">
+
+                                                    <h4 class="modal-title">Log In</h4>
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>you can join, vote, and comment on
+                                                        all your favorite INCHIC content.</p>
+
+                                                    <form action="/inchic" method="GET">
+                                                        <input type="text" name="userName"
+                                                            placeholder="User Name" class="m-1">
+                                                        <input type="text" name="passWord" placeholder="Password"
+                                                            class="m-1">
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-outline-dark">Log-In</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <div class="row mt-5">
+            <div class="col-sm-3">
+                <div class="card">
+                    <h6 class="card-header bg-dark text-white-50">Notice</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                INCHIC 공지사항
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">기타 공지사항</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">채용 공고</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card mt-5 text-center">
+                    <img src="../public/images/inchic/6.png" alt="factory four" width="100%" height="60%">
+                    <h4 class="m-2">Contact</h4>
+                    <p>비즈니스 문의하기</p>
+                </div>
+
+            </div>
+            <div class="col-sm-9">
+                <div class="card">
+                    <h2 class="m-1 ml-3 mb-3">INCHIC 공지사항</h2>
+
+
+                    <div class="container">
+
+                        <table class="mb-3 table table-sm table-bordered table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-white-50 text-center">번호</th>
+                                    <th class="text-white-50 text-center">제목</th>
+                                    <th class="text-white-50 text-center">작성자</th>
+                                    <th class="text-white-50 text-center">작성일</th>
+                                </tr>
+
+                                </thread>
+                            <tbody>
+                                <tr class="table">
+                                    <td class="text-center">459</th>
+                                    <td>형식승인(추가6종) 수수료(안)</td>
+                                    <td class="text-center">형식승인팀</td>
+                                    <td class="text-center">2019-07-11</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">458</th>
+                                    <td>정밀안전진단 수수료(안) 의견수렴</td>
+                                    <td class="text-center">기술기준팀</td>
+                                    <td class="text-center">2019-06-04</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">457</th>
+                                    <td>기술 상담회 참가 안내</td>
+                                    <td class="text-center">중소기업지원팀</td>
+                                    <td class="text-center">2019-05-28</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">456</th>
+                                    <td>기술사업화 입주기업 모집 공고</td>
+                                    <td class="text-center">중소기업지원팀</td>
+                                    <td class="text-center">2019-05-09</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">455</th>
+                                    <td>형식승인(추가6종) 수수료(안)</td>
+                                    <td class="text-center">형식승인팀</td>
+                                    <td class="text-center">2019-04-11</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">454</th>
+                                    <td>정밀안전진단 수수료(안) 의견수렴</td>
+                                    <td class="text-center">기술기준팀</td>
+                                    <td class="text-center">2019-03-04</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">453</th>
+                                    <td>기술 상담회 참가 안내</td>
+                                    <td class="text-center">중소기업지원팀</td>
+                                    <td class="text-center">2019-02-28</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">452</th>
+                                    <td>기술사업화 입주기업 모집 공고</td>
+                                    <td class="text-center">중소기업지원팀</td>
+                                    <td class="text-center">2019-02-09</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">451</th>
+                                    <td>형식승인(추가6종) 수수료(안)</td>
+                                    <td class="text-center">형식승인팀</td>
+                                    <td class="text-center">2019-01-11</td>
+                                </tr>
+                                <tr class="table">
+                                    <td class="text-center">450</th>
+                                    <td>정밀안전진단 수수료(안) 의견수렴</td>
+                                    <td class="text-center">기술기준팀</td>
+                                    <td class="text-center">2019-01-04</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6">
+                                <div class="row   mb-3 justify-content-center">
+
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">1</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">2</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">3</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">4</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">5</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">6</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">7</a>
+                                    </div>
+                                    <div class="border px-2 border-right-0">
+                                        <a class="nav-link p-0" href="#">8</a>
+                                    </div>
+                                    <div class="border px-2">
+                                        <a class="nav-link p-0" href="#">9</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

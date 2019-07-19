@@ -15,8 +15,8 @@ const router = express.Router();
 
 
 router.get('/', function (req, res) {
-res.sendFile(path.join(__dirname + '/index.html'));
-//__dirname : It will resolve to your project folder.
+    res.sendFile(path.join(__dirname + '/main.html'));
+    //__dirname : It will resolve to your project folder.
 });
 
 //현주
@@ -43,6 +43,28 @@ router.get('/notice', function (req, res) {
     console.log(req.query);
     res.send('Request parameters :'+req.query.password+','+req.query.email)
     });
+
+
+//인식
+router.get('/inchic', function (req, res) {
+    res.sendFile(path.join(__dirname + '/inchic/index.html'));
+    //__dirname : It will resolve to your project folder.
+});
+router.get('/inchic/notice', function (req, res) {
+    res.sendFile(path.join(__dirname + '/inchic/notice.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+//인식 응답자
+router.get('/inchic', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.email)
+});
+
+
+
+
+
 
 app.use('/', router);
 
