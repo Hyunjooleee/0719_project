@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <form action="/index">
+            <!------------------ 상단 바 시작-->
+            <div>
+                <nav class="navbar col mb-3 navbar-expand-sm bg-dark navbar-dark justify-content-between">    
+                    <div class="form-inline">
+                        <h1 class="navbar-brand font-weight-bold text-warning">Movie</h1>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/hyunjoo/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Movie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Theater</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hyunjoo/notice.html">Review</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <form class="form-inline">
+                            <button class="btn btn-outline-light my-2 my-sm-0 mr-3" type="button" data-toggle="modal" data-target="#myModal">
+                                Log in
+                            </button>
+
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-dialod-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title mr-3">Log in</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group mr-3">
+                                                <label for="id">ID</label>
+                                                <input type="text" name= "id" class="form-control col ml-3" id="id" placeholder="ID">
+                                            </div>
+                                            <div class="form-group mt-3 mr-3">
+                                                <label for="pwd">Psssword</label>
+                                                <input type="pwd" name= "pwd" class="form-control col ml-3" id="pwd" placeholder="Password">
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <button type="submit" class="btn btn-secondary mt-3">Log in</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--button class="btn btn-outline-light my-2 my-sm-0" type="button">
+                                Sign up
+                            </button-->  
+                            <a href="/hyunjoo/signup.html" class="btn btn-outline-light my-2 my-sm-0">
+                                Sign up
+                            </a> 
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!-----------------------------상단 바 끝-->
+
+            <!---------------------------검색 창 시작-->
+            <div class="mb-3">
+                <h3>Movie Search</h3>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" name= "search" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-lg-0" type="submit">Search</button>
+                </form>
+            </div>
+            <!-----------------------------검색 창 끝-->
+
+            <!-----------------------------이미지 시작-->
+            <div class="content-center">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../public/images/theater1.jpg"  class="img-fluid" style="width: 1200px; height: 500px;" alt="theater1">
+                            <div class="carousel-caption"><h3>Welcome!!</h3></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../public/images/theater2.png" class="img-fluid" style="width: 1200px; height: 500px;" alt="theater2">
+                            <div class="carousel-caption"><h3>Welcome!!</h3></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../public/images/theater3.jpg" class="img-fluid" style="width: 1200px; height: 500px;" alt="theater3">
+                            <div class="carousel-caption"><h3>Welcome!!</h3></div>
+                        </div>
+                    </div>
+                    
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <!-----------------------------이미지 끝-->
+
+            <!-----------------------------영화 시작-->
+            <div class="mt-5">
+                <h1 class="mb-3">Movies</h1>
+                <div class="card-deck mb-5">
+                    <div class="card">
+                        <img src="../public/images/ala.jpg" class="card-img-bottom" alt="plain">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">알라딘</h5>
+                            <p class="card-text">머나먼 사막 속 신비의 아그라바 왕국의 시대.
+                                좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나선다</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../public/images/lionking.jpg" class="card-img-bottom" alt="plain">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">라이온 킹</h5>
+                            <p class="card-text">어린 사자 ‘심바’는 프라이드 랜드의 왕인 아버지 ‘무파사’를
+                                    야심과 욕망이 가득한 삼촌 ‘스카’의 음모로 잃고 왕국에서도 쫓겨난다. 
+                                    </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../public/images/spider.jpg" class="card-img-bottom" alt="plain">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">스파이더 맨</h5>
+                            <p class="card-text">‘엔드게임’ 이후 변화된 세상,
+                                    스파이더맨 ‘피터 파커’는 학교 친구들과 유럽 여행을 떠나게 된다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck">    
+                    <div class="card">
+                        <img src="../public/images/toystory.jpg" class="card-img-bottom" alt="plain">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">토이 스토리</h5>
+                            <p class="card-text">장난감의 운명을 거부하고 떠난 새 친구 ‘포키’를 찾기 위해 길 위에 나선 ‘우디’는
+                                    우연히 오랜 친구 ‘보핍’을 만나고 그녀를 통해 새로운 세상에 눈을 뜨게 된다.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../public/images/ungdung.jpg" class="card-img-bottom" alt="plain">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">엉덩이 탐정</h5>
+                            <p class="card-text">평화로운 오후의 찻집, 엉덩이 탐정과 조수 브라운이 티타임을 즐기고 있을 때, 
+                                    큰 쇼핑백을 든 뿌우람 씨가 들어온다. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../public/images/silence.jpg" class="card-img-bottom" alt="plain">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">사일런스</h5>
+                            <p class="card-text">갑자기 알 수 없는 존재가 세상의 모든 소리를 집어 삼키고, 소리 내는 모든 인류는 공격을 당한다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------영화 끝-->
+        </form>
+    </div>
+</body>
+</html>
