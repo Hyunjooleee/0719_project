@@ -32,6 +32,7 @@ router.get('/inchic/notice', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+//인식 응답자
 router.get('/inchic', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : ' + req.query.email)
