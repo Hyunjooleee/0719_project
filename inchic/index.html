@@ -48,7 +48,24 @@
                 <ul class="navbar-nav">
                     <div class="row mx-1">
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">Sign-up</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signUp">Sign-up</a>
+                            
+                            <div class="modal fade" id="signUp">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal Heading</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Modal body..
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#">Log-in</a>
@@ -100,28 +117,51 @@
             <div class="card">
                 <img src="../public/images/inchic/4.jpg" alt="factory four" width="100%" height="60%">
                 <h3 class="m-2">News</h3>
-                <p>INCHIC 의 다양한 소식을 전달합니다.</p>
+                <p>INCHIC 의 다양한 소식을 전달합니다</p>
             </div>
             <div class="card">
                 <img src="../public/images/inchic/5.png" alt="factory four" width="100%" height="60%">
                 <h3 class="m-2">Stock</h3>
-                <p>빠르고 정확한 주가 정보.</p>
+                <p>빠르고 정확한 주가 정보</p>
             </div>
             <div class="card">
-                <img src="../public/images/inchic/4.jpg" alt="factory four" width="100%">
-                <h3 class="m-2">News</h3>
-                <p>INCHIC 의 다양한 소식을 전달합니다.</p>
+                <img src="../public/images/inchic/6.png" alt="factory four" width="100%" height="60%">
+                <h3 class="m-2">Contact</h3>
+                <p>비즈니스 문의하기</p>
             </div>
 
         </div>
+        <!-- https://getbootstrap.com/docs/4.3/content/typography/#responsive-font-sizes -->
+        <!-- 유동글자 -->
 
 
 
-        <div class="row justify-content-center">
+
+        <!-- <div class="row justify-content-center">
             <h1 class="display-1">InChic</h1>
-        </div>
-        <div class="row justify-content-center">
-            <h1 class="display-1">InChic</h1>
+        </div> -->
+    </div>
+
+
+    <button type="button" data-toggle="modal" data-target="#myModal">
+        Open modal </button>
+
+    <a href="#" data-toggle="modal" data-target="#myModal">A HREF TEST</a>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Modal body..
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
