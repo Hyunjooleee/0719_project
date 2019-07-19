@@ -23,7 +23,7 @@ router.get('/', function (req, res) {
 
 
 //인식
-router.get('/inchic', function (req, res) {
+router.get('/inchic/index', function (req, res) {
     res.sendFile(path.join(__dirname + '/inchic/index.html'));
     //__dirname : It will resolve to your project folder.
 });
