@@ -49,6 +49,9 @@
                     <div class="row mx-1">
                         <li class="nav-item mx-2">
 
+
+
+
                             <!-- Sign Up 모달 -->
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#signUp">Sign-up</a>
 
@@ -71,11 +74,14 @@
                                                         data-dismiss="modal">&times;</button>
 
                                                 </div>
-                                                <div class="modal-body">
-                                                    <p>By having a INCHIC account, you can join, vote, and comment on
-                                                        all your favorite INCHIC content.</p>
+                                                <form action="/inchic" method="GET">
 
-                                                    <form action="/inchic" method="GET">
+                                                    <div class="modal-body">
+                                                        <p>By having a INCHIC account, you can join, vote, and comment
+                                                            on
+                                                            all your favorite INCHIC content.</p>
+
+                                                        <!-- <form action="/inchic" method="GET"> -->
                                                         <input type="text" name="email" placeholder="E-mail"
                                                             class="m-1">
                                                         <input type="text" name="userName"
@@ -83,18 +89,24 @@
                                                         <input type="password" name="passWord" placeholder="Password"
                                                             class="m-1">
 
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-outline-dark">Sign-Up</button>
 
-                                                </div>
+
+                                                        <!-- </form> -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit"
+                                                            class="btn btn-outline-dark">Sign-Up</button>
+
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
+
+
                         </li>
 
 
@@ -122,22 +134,26 @@
                                                         data-dismiss="modal">&times;</button>
 
                                                 </div>
-                                                <div class="modal-body">
-                                                    <p>you can join, vote, and comment on
-                                                        all your favorite INCHIC content.</p>
+                                                <form action="/inchic" method="GET">
 
-                                                    <form action="/inchic" method="GET">
-                                                        <input type="text" name="userName"
-                                                            placeholder="User Name" class="m-1">
+                                                    <div class="modal-body">
+                                                        <p>you can join, vote, and comment on
+                                                            all your favorite INCHIC content.</p>
+
+                                                        <!-- <form action="/inchic" method="GET"> -->
+                                                        <input type="text" name="userName" placeholder="User Name"
+                                                            class="m-1">
                                                         <input type="password" name="passWord" placeholder="Password"
                                                             class="m-1">
 
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-outline-dark">Log-In</button>
+                                                        <!-- </form> -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn btn-outline-dark">Log-In</button>
 
-                                                </div>
+                                                    </div>
+                                                    
+                                                </form>
                                             </div>
                                         </div>
 
@@ -146,7 +162,7 @@
                             </div>
                         </li>
 
-                        
+
                     </div>
                 </ul>
             </div>
